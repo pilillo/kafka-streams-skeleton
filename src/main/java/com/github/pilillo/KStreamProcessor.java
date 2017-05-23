@@ -124,7 +124,7 @@ public class KStreamProcessor {
 				.foreach(new ForeachAction<String, GenericRecord>() {
 				@Override
 				public void apply(String key, GenericRecord value) {
-					//System.out.println(key + ": " + value.toString());
+					System.out.println(key + ": " + value.toString());
 					//System.out.println(value.get("avro_field1")+", "+value.get("avro_field2"));
 				}
 			 });
